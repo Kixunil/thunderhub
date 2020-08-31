@@ -1,0 +1,2 @@
+# The clearnet domain name used for your server
+selfhost-clearnet	selfhost-clearnet/domain	string	example.com
