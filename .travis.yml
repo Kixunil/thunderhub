@@ -14,6 +14,6 @@ before_install:
         - sudo apt-get update
         - sudo apt-get install --no-install-recommends selfhost-clearnet
         - sudo apt-get install python3-lnpbp-testkit python3-selenium libnode-dev
-        - sudo useradd -a -G lnd-system-regtest,bitcoin-regtest $USER
+        - sudo usermod -a -G lnd-system-regtest,bitcoin-regtest $USER
 
 script: tests/travis.sh
