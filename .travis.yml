@@ -6,7 +6,7 @@ addons:
 
 before_install:
         - sudo debconf-set-selections < tests/debconf.txt
-        - sudo mkdir -p /etc/selfhost
+        - sudo mkdir -p /etc/selfhost/apps
         - sudo cp tests/selfhost_app.yml /etc/selfhost/apps/thunderhub-regtest.conf
         - gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 3D9E81D3CA76CDCBE768C4B4DC6B4F8E60B8CF4C
         - gpg --export 3D9E81D3CA76CDCBE768C4B4DC6B4F8E60B8CF4C | sudo apt-key add -
