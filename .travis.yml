@@ -4,6 +4,7 @@ addons:
         hosts:
                 - example.com
 
+env: NODE_GYP_FORCE_PYTHON=python3 EXPERIMENTAL_NODE_GYP_PYTHON3=1
 before_install:
         - sudo debconf-set-selections < tests/debconf.txt
         - sudo mkdir -p /etc/selfhost/apps
